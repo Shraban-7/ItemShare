@@ -1,0 +1,14 @@
+.card{
+    height: 100%;
+}
+
+.card-text{
+    height: 150px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 556px) {
+    .slider-img{
+        height: 250px;
+    }
+}

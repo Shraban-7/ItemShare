@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Brian2694\Toastr\Facades\Toastr;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+// use Illuminate\Contracts\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Paginator::useBootstrap();
+        Toastr::useVite();
     }
 }
